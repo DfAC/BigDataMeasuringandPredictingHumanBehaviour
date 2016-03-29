@@ -1,0 +1,26 @@
+---
+title: "Week 02 exercise"
+author: "Lukasz K Bonenberg"
+output:
+  html_document:
+    highlight: pygments
+    theme: cerulean
+    #toc: yes
+---
+
+```{r, echo=FALSE,warning = FALSE}
+setwd("d:/tmp/Dropbox/Edu/other/BigDataMeasuringandPredictingHumanBehaviour/")
+rm(list=ls(all=TRUE))
+
+library(knitr)
+opts_chunk$set(echo = T, cache = T, cache.path = "cache/", fig.path = "figure/", warning = FALSE,error=FALSE,message=F,strip.white=T)
+#http://yihui.name/knitr/options/
+```
+
+
+#<a name="intro">Introdcution</a> 
+
+
+# References
+
+[H21EC1_descr]: http://modulecatalogue.nottingham.ac.uk/nottingham/asp/moduledetails.asp?crs_id=019420&year_id=000115 "H21EC1 Engineering Communication module description"
