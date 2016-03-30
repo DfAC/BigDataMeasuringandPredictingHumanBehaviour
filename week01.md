@@ -44,10 +44,9 @@ University of Warwick [online course](https://www.futurelearn.com/courses/big-da
 
 * Data can be obtained from [google][Google_Trends] and [Wikipedia][Wiki_stats]. For [example](https://www.google.co.uk/trends/explore#geo&cmpt=q&q=Economy+class+flight,+Business+class+flight,+low+cost+flight,+flight+accidents).
 
-
+d:/tmp/Dropbox/Edu/other/BigDataMeasuringandPredictingHumanBehaviour/
 
 # Week 2
-
 
 * google provides additional filters as it has additional knowledge about searches
 * Google Trends normalise search data - each data point is divided by the total searches of the geography and time range it represents, to compare relative popularity. The resulting numbers are then scaled to a range of 0 to 100.
@@ -80,9 +79,25 @@ University of Warwick [online course](https://www.futurelearn.com/courses/big-da
 * privacy is overated?
 * can be used for [health](https://www.youtube.com/watch?v=ZPXCF5e1_HI)
 
+# Week 3
 
+* rapid measurements allows for better decisions and better reactions
+* its all about decisions
 
+* Physics deal with fluctuations
 
+## Effect of printed news on stock markets
+
+* analysis corpus of FT 2008-12, looking at stock market 3 days before and 3 days after the mention
+* there was correlation between interest in company news and its stock prices
+* transaction volume, absolute return also correlate with stock prices
+* day return did now show correlation
+
+## google data and trading
+
+* [searches correlate with financial events](https://www.google.co.uk/trends/explore#geo&cmpt=q&q=+financial+crisis,+Lehman+Brothers)
+* google provides weekly searches
+* there was correlation between google searches and trading volume
 
 
 
