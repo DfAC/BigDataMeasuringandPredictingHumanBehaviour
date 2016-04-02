@@ -1,0 +1,62 @@
+---
+title: "Week 02 exercise"
+author: "Lukasz K Bonenberg"
+output:
+  html_document:
+    highlight: pygments
+    theme: cerulean
+    #toc: yes
+---
+
+```{r, echo=FALSE,warning = FALSE}
+setwd("d:/tmp/Dropbox/Edu/other/BigDataMeasuringandPredictingHumanBehaviour/")
+rm(list=ls(all=TRUE))
+
+library(knitr)
+opts_chunk$set(echo = T, cache = T, cache.path = "cache/", fig.path = "figure/", warning = FALSE,error=FALSE,message=F,strip.white=T)
+#http://yihui.name/knitr/options/
+```
+
+
+#<a name="intro">Introdcution</a> 
+
+In this project we will try and visualise what people are looking for at Wikipeadia using < http://stats.grok.se/> website. 
+Access format is quite easy: stats.grok.se/en/DATE/KEYword 
+
+# downlad data
+
+```{r}
+#install.packages("RJSONIO")  # Install the JSON parser
+library(RCurl)
+library(RJSONIO)  # Load the JSON parser
+
+
+
+targetURL<-"http://stats.grok.se/json/en/201601/Friday"
+rawData <- getURL(targetURL)
+parsedData <- fromJSON(rawData)
+
+```
+
+## understand data
+
+Curently dates are treated as our row names. Lets create data frame from data instead
+
+```{r}
+names(parsedData$daily_views)
+
+parseData <- data.frame(Date=names(parsedData$daily_views),  # get the names
+        Views=parsedData$daily_views,  # get the data points
+        row.names=NULL) # stop using the dates as names
+
+
+```
+
+
+
+# Visualise data
+
+```{r}
+hist(parsedData$daily_views)
+```
+

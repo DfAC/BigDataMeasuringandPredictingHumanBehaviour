@@ -93,35 +93,42 @@ d:/tmp/Dropbox/Edu/other/BigDataMeasuringandPredictingHumanBehaviour/
 * transaction volume, absolute return also correlate with stock prices
 * day return did now show correlation
 
-## google data and trading
+## Google data and trading
 
 * [searches correlate with financial events](https://www.google.co.uk/trends/explore#geo&cmpt=q&q=+financial+crisis,+Lehman+Brothers)
 * google provides weekly searches
 * there was correlation between google searches and trading volume
 
+### Trading strategy
+
+Can we create a trading strategy based on this one? Author used financially related words from Google and created buying strategy based on this one.
+
+* google trends are on weekly basis so they checked week on week change - this week vs average of 3 previous weeks
+* if down they buy, if up they sell - we do it every week on Monday
+* [publication](http://www.nature.com/articles/srep01684)
+* fix and hold strategy would give you 16%, random strategies would give (-20;20)
+* search for **culture** would give 5%, search for **debt** would give 326%
 
 
-[Google_Trends]: https://www.google.com/trends
-[Wiki_stats]: http://stats.grok.se/ ""
+Using FT word search created even better strategy. What if we use multiple key words? Its will be noisy so we
+* reduce dimensionality using [Latent Dietrich Allocation](https://en.wikipedia.org/wiki/Latent_Dirichlet_allocation)
+* trained LDA model on wikipedia
+* created groups of words
+* found relevant [keyword groups](https://www.youtube.com/watch?v=b42k7IZ9DcI&list=PLEMiIcsJKOBcQfE2kwFY9GU4WzZ0lvJNS&index=12) which allows to determine stock movement as [described here](http://www.pnas.org/content/111/32/11600.abstract)
+* [there are other researches in this area](http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0073791)
 
-# To do
+### [Using Wiki](http://www.nature.com/articles/srep01801)
 
-* <http://xavier-fim.net/packages/ggmcmc/>
-* <http://www.analyticbridge.com/profiles/blogs/text-analysis-101-a-basic-understanding-for-business-users-1>
-* <http://www.analyticbridge.com/>
+Article in Nature is discussing
 
 
 
 
 
-## Add stuff to blog
 
-1 .Some introduction to Deep learning
 
-Simple explanation of #deeplearning terms http://bit.ly/1ZEPuM1 #datascience #data
 
-Great #visualisation of #deeplearning confusion matrix by @genekogan
 
-start with therms
 
-2. S2DS blog
+[Google_Trends]: https://www.google.com/trends "Google trends"
+[Wiki_stats]: http://stats.grok.se/ "Wiki data"
