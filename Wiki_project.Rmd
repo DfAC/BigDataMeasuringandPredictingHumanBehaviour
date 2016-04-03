@@ -40,7 +40,7 @@ parsedData <- fromJSON(rawData)
 
 ## understand data
 
-Curently dates are treated as our row names. Lets create data frame from data instead
+Curently dates are treated as our row names. Lets create data frame and sort out dates and data order.
 
 ```{r}
 names(parsedData$daily_views)
@@ -48,7 +48,9 @@ names(parsedData$daily_views)
 parseData <- data.frame(Date=names(parsedData$daily_views),  # get the names
         Views=parsedData$daily_views,  # get the data points
         row.names=NULL) # stop using the dates as names
-
+parseData$Date < -as.Date(parseData$Date)
+parseData <- parseData[order(parseData$Date),]
+row.names(parseData) <- NULL #reset row numbers
 
 ```
 
@@ -57,6 +59,13 @@ parseData <- data.frame(Date=names(parsedData$daily_views),  # get the names
 # Visualise data
 
 ```{r}
-hist(parsedData$daily_views)
+library(ggplot2)
+library(gtable)
+
+plot(parsedData$daily_views)
+plot_data <- qplot(x=Date,y=Views,data=parseData,group=1)
+plot_data +geom_line()+theme_bw()+theme(axis.text.x = element_text(angle = 90, hjust = 1))
+
+
 ```
 

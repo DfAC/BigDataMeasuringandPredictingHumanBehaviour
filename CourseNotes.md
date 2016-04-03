@@ -119,12 +119,32 @@ Using FT word search created even better strategy. What if we use multiple key w
 
 ### [Using Wiki](http://www.nature.com/articles/srep01801)
 
-Article in Nature is discussing
+Article in Nature is discussing share trading of Dow Jones Industrial Average (DJIA) based on the average viewing (from <stats.grok.se>) and editing (from Revision history) of 30 DJIA listed companies Wikipedia English entities for period 10th December 2007 and 30th April 2012.
 
+* changes calculated as diff from n week average
+* week end on Sunday, trading occurs on Monday to avoid overlap
+* estimation of value gained is $R = \sum ln (value_{week_n end}-value_{week_n start})$
+* to compare they used random step strategy (run 10k times)
+	* neglecting 104 transaction fees, it is possible to sell stock without owning it
+	* distribution return is not normal so they used non-parametric test, two-tailed two-sample Wilcoxon rank-sum test, Bonferroni correction applied
+* then a more general approach was used of 285 general economic concepts
+	* resutls of edits are more normalised around 0
+	* results of views are again right skewed but without so visible peak at 1.4
+	* there seems to be not enough edit data (few k on total, most pages <50), so ignored for future analysis
+* 1-10 weeks averages have been tested, R values differ and all are above > 0
+* they compared traffic to other Wiki pages to make sure that change in volume is not due to some other phenomena
+	* strategies based on non-financially related pages where the same as average random ones
+* authors think that Wiki searches can provide proxy for information gathering when spending
+	* humans are loss averse, so more research might indicate willingness to sell stock
 
+* [another article](http://www.pnas.org/content/111/32/11600.full.pdf) on the same topic
 
+## behaviour changes
 
+Be careful with relaying on research findings.
 
+* human behaviour changes
+* with money at stake ppl might consider polluting or changing the signal, especially since paper has been published
 
 
 
