@@ -21,7 +21,7 @@ opts_chunk$set(echo = T, cache = T, cache.path = "cache/", fig.path = "figure/",
 #<a name="intro">Introdcution</a> 
 
 In this project we will try and visualise what people are looking for at Wikipeadia using < http://stats.grok.se/> website. 
-Access format is quite easy: stats.grok.se/en/DATE/KEYword 
+
 
 # downlad data
 
@@ -54,9 +54,7 @@ row.names(parseData) <- NULL #reset row numbers
 
 ```
 
-
-
-# Visualise data
+## Visualise data
 
 ```{r}
 library(ggplot2)
@@ -67,5 +65,41 @@ plot_data <- qplot(x=Date,y=Views,data=parseData,group=1)
 plot_data +geom_line()+theme_bw()+theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
 
+```
+
+
+# Automating the process
+
+Let's now lookinto automating this process. Overall principle is quite easy, yust acccess relevant website address: stats.grok.se/json/en/yyyymm/KEYword 
+
+```{r}
+#month <- 1
+#year <- 2016
+keyword<-"smoke"
+```
+
+We want all data 2008-October 2014
+
+```{r}
+
+baseUrl <- "stats.grok.se/json/en/"
+listUrl <- NULL #init
+
+for (year in (2008:2014)){
+  for (month in 1:12){
+    if ((year == 2014) && (month>10)){
+      next #skip run
+    }
+    date <- sprintf("%04i%02i",year,month)
+    getUrl<- paste0(baseUrl,date,'/',keyword)
+    
+    #print(getUrl)
+    listUrl <- c(listUrl,getUrl)
+  
+  }#month in 1:12){
+}#year in (2008:2015){}
+
+
+print(listUrl)
 ```
 

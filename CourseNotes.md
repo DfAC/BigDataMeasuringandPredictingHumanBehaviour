@@ -1,6 +1,11 @@
  Big Data: Measuring and Predicting Human Behaviour
  ============
 
+Presenters
+
+Tobias, Suzy, Chanuki,
+
+
 # Week 1
 
 University of Warwick [online course](https://www.futurelearn.com/courses/big-data).
@@ -79,7 +84,7 @@ d:/tmp/Dropbox/Edu/other/BigDataMeasuringandPredictingHumanBehaviour/
 * privacy is overated?
 * can be used for [health](https://www.youtube.com/watch?v=ZPXCF5e1_HI)
 
-# Week 3
+# Week 3 - predicitng stock market
 
 * rapid measurements allows for better decisions and better reactions
 * its all about decisions
@@ -145,6 +150,61 @@ Be careful with relaying on research findings.
 
 * human behaviour changes
 * with money at stake ppl might consider polluting or changing the signal, especially since paper has been published
+
+
+# week 4 - fighting crime
+
+What is it obvious? Understanding complex systems is never obvious/easy as patters are changing all the time. Understanding patterns can also be used for [targeted manipulation](http://www.bloomberg.com/news/articles/2015-05-20/the-10-hedge-fund-supercomputer-that-s-sweeping-wall-street). If a lot of ppl know about it, then behaviour pattern changes as well. There is always a need for adaptive algorithms.
+
+How can we predict human behaviour then? Our predictions can affect the system (human behaviour) even removing the pattern. Yet a lot of our behaviour is driven by habits, so it is difficult to change them.
+
+## predicting crimes
+
+We can use human behaviour to predict crime hotspots  and creating predictive policing software. Toby Daves (Department of Civil, Environmental and Geomatic Engineering at University College London) [describe environmental criminology](https://www.youtube.com/watch?v=ppQfb4ltzMM&list=PLEMiIcsJKOBcQfE2kwFY9GU4WzZ0lvJNS&index=13).
+
+* more visited placed, more crime
+	* betweens links to create more central areas (busiest streets)
+* discussion highlighted more sophisticated burgers [using social media approach](http://www.scoop.co.nz/stories/BU1510/S00056/burglars-using-social-media-to-target-victims.htm)
+	* how much data delivered information has been available before? Using street smart local cops?
+* [other papers
+	* <http://datapop.wpengine.com/wp-content/uploads/2015/08/Crime-Hotspots-Big-Data-London.pdf>
+	* <http://www.theguardian.com/cities/2014/jun/25/predicting-crime-lapd-los-angeles-police-data-analysis-algorithm-minority-report> and <https://www.youtube.com/watch?v=Su9H9QtyMmc>
+	* <http://www.bbc.co.uk/guides/zqsg9qt>
+	* <http://www.sciencedirect.com/science/article/pii/S2405918815000021>
+
+## [predicting protests](https://www.youtube.com/watch?v=Zp2yqTHOamI&list=PLEMiIcsJKOBcQfE2kwFY9GU4WzZ0lvJNS&index=7)
+
+Big data is magnet to get needle from haystack. We can predict future events by using [information available on the internet](https://www.youtube.com/watch?v=x7PK8BOfkH0&list=PLEMiIcsJKOBcQfE2kwFY9GU4WzZ0lvJNS&index=14).
+
+* initial model was based on contingency (entropy increases)
+	* a burst happens and a lot of ideas spread
+* instead ppl attending the same virtual space to share information
+	* nothing on the tweets
+	* a lot of organisational Facebook pages
+	* eventually a single idea get promoted and get motion
+
+
+
+## [Conflicts and opinions in Wikipedia](https://www.youtube.com/watch?v=GhkmCvIbSc0&list=PLEMiIcsJKOBcQfE2kwFY9GU4WzZ0lvJNS&index=15)
+
+Looking at history of changes of the Wiki pages we can map conflicts of opinions. They came up with measure of controversy for article - for example [Jesus](http://www.economist.com/blogs/graphicdetail/2013/08/daily-chart-1) is [very controversial](https://en.wikipedia.org/wiki/Wikipedia:List_of_controversial_issues) in any language.
+You can also geolocate those problems - seeing how global different languages are.
+
+
+# week 5 - gathering data
+
+
+
+
+
+
+
+# general references
+
+* [Measuring indirect discrimination in machine learning](http://arxiv.org/pdf/1511.00148v1.pdf) and [article about it](https://theconversation.com/big-data-algorithms-can-discriminate-and-its-not-clear-what-to-do-about-it-45849)
+* [white house big data privacy](https://www.whitehouse.gov/sites/default/files/docs/big_data_privacy_report_may_1_2014.pdf)
+* [splunk, security](http://www.splunk.com/en_us/solutions/solution-areas/security-and-fraud.html)
+
 
 
 
