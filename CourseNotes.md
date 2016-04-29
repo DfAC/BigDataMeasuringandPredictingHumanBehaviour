@@ -187,11 +187,43 @@ Big data is magnet to get needle from haystack. We can predict future events by 
 
 ## [Conflicts and opinions in Wikipedia](https://www.youtube.com/watch?v=GhkmCvIbSc0&list=PLEMiIcsJKOBcQfE2kwFY9GU4WzZ0lvJNS&index=15)
 
-Looking at history of changes of the Wiki pages we can map conflicts of opinions. They came up with measure of controversy for article - for example [Jesus](http://www.economist.com/blogs/graphicdetail/2013/08/daily-chart-1) is [very controversial](https://en.wikipedia.org/wiki/Wikipedia:List_of_controversial_issues) in any language.
-You can also geolocate those problems - seeing how global different languages are.
+Looking at history of changes of the Wiki pages we can map conflicts of opinions. They came up with measure of controversy for article - for example [Jesus](http://www.economist.com/blogs/graphicdetail/2013/08/daily-chart-1) is [very controversial](https://en.wikipedia.org/wiki/Wikipedia:List_of_controversial_issues) in any language. You can also geolocate those problems - seeing how global different languages are.
+
+## summary of week 4
+
+* we do not displace crime by reducing it in one area
+	* there been a number of research project
+* privacy is issue
+* most datasets data does not gerenalise to population at large
+	* we can correct for those biases
+	* sometimes we just want quick data, then we can just simplify this
 
 
-# week 5 - gathering data
+# week 6 - Health
+
+Note that week 5 was study break only. Week 6 focus on Health.
+
+* point of the nowcasting is to speed up a process that normally takes weeks and months
+
+## spread of epidemics predictions
+
+* we can create model using data how ppl commute
+* [Bruno Gonçalves](http://www.bgoncalves.com/) [interview](https://www.youtube.com/watch?v=I5d4C_5XUZQ&index=6&list=PLEMiIcsJKOBcQfE2kwFY9GU4WzZ0lvJNS) discuss details and system
+	* requirements
+		* population density and location
+		* how ppl travel
+	* model can predict how epidemics spreads
+		* <http://www.thestar.com/news/insight/2016/02/22/how-a-toronto-company-used-big-data-to-predict-the-spread-of-zika.html>
+* we can also use this information to predict how ppl behaviour will change in future
+	* <https://theconversation.com/heres-how-tweets-and-check-ins-can-be-used-to-spot-early-signs-of-gentrification-57620>
+	* <http://www.theguardian.com/commentisfree/2016/mar/02/battle-of-hastings-gentrification-sussex-rents-affordable>
+	* <http://www.theguardian.com/world/2015/aug/23/europe-rural-urban-migration-threat-countryside>
+* predicting other things
+	* [weather](http://news.microsoft.com/features/every-second-counts-for-businesses-that-depend-on-accuweather-to-save-lives-stock-supplies-stage-events/#sm.00001alxqeknjgepbrdo5p7g48yiy)
+
+
+
+# week 7 - Happiness
 
 
 
