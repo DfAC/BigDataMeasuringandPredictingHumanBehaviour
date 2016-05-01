@@ -1,5 +1,5 @@
 ---
-title: "Week 02 exercise"
+title: "Human Behaviour R project"
 author: "Lukasz K Bonenberg"
 output:
   html_document:
@@ -137,4 +137,70 @@ plot_data <- qplot(x=Date,y=Views,data=allViewsData,group=1)
 plot_data +geom_line()+theme_bw()+theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
 ```
+
+
+## How much UK users google for the future
+
+```{r}
+
+#skip start and end of file - aditional notes
+googleTrendsData<-read.csv("week6_googleTrends.csv",skip=4,header = T,nrow=582-5)
+
+#sort out dates
+googleTrendsData$Year<-as.numeric(substring(googleTrendsData$Week,first = 1,last = 4))
+
+head(googleTrendsData)
+
+```
+
+Lets calculate index for 2012
+
+```{r}
+y2012trend <- subset(googleTrendsData,Year==2012)
+futureIndex <- sum(y2012trend$X2013)/sum(y2012trend$X2011)
+str4display<-sprintf("Future index for UK in 2012 is >1, it is %.2f",futureIndex)
+str4display
+```
+
+
+## How much ppl in the world google for the future
+
+
+Lets first get all the files
+
+```{r}
+unzip("Trends.zip",list = F) #unzip it
+allFileNames <- list.files("Trends")  #get file names
+
+```
+
+
+And then get data
+
+```{r}
+allFOI<-NULL
+
+for (datafile in allFileNames){
+  
+  countryID<-substring(datafile, first=1, last=2) #get country codes from file name
+  datafile<- paste0("Trends/",datafile) #add dir
+  trendsData <- read.csv(datafile,skip=4,nrows = 476-5)
+  trendsData$Year <- as.numeric(substring(trendsData$Week,first = 1, last = 4))
+  
+  
+  trendsData2012 <- subset(trendsData, Year == 2012)
+  FOI <- data.frame(Country= countryID, FOI = sum(trendsData2012$X2013)/ sum(trendsData2012$X2011))
+  repoStr<- sprintf("Future index for %s in 2012 was %.2f",countryID,FOI[2])
+  print(repoStr)
+  
+  allFOI<-rbind(allFOI,FOI)
+}
+
+unlink("Trends/*") #remove all files
+```
+
+
+# Things to look up
+
+* there is dedicated [gtrend package](https://github.com/PMassicotte/gtrendsR)
 

@@ -3,7 +3,7 @@
 
 Presenters
 
-Tobias, Suzy, Chanuki,
+Tobias, Suzy, [Chanuki](http://www.thoughtsymmetry.com/),
 
 
 # Week 1
@@ -225,11 +225,101 @@ Note that week 5 was study break only. Week 6 focus on Health.
 
 # week 7 - Happiness
 
+* nowcasting allows to provide results quicker than official statistics and with better graduation
+* we should allow for ppl behaviour changes over time on our model
+
+## measuring happiness with mobile phones
+
+* George [talk](https://www.youtube.com/watch?v=3wrBe74REz0&index=16&list=PLEMiIcsJKOBcQfE2kwFY9GU4WzZ0lvJNS)
+* hedonic concept - your current feelings
+* we can measure the same using Tweeter and Facebook
+	* we can use this data to understand how happiness spreads
+	* ppl are happier on Weekends and least happy on Tuesday
+	* correlation with feeling and rain
+	* there is also an evidence that this will [propagate through the network](http://www.pnas.org/content/111/24/8788.full)
+* references
+	* <http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0090315>
+	* [we work harder when we are happy](https://www.sciencedaily.com/releases/2014/03/140320100942.htm)
+	* [world happiness report](http://worldhappiness.report/ed/2016/)
+
+## id users
+
+* we can identify ppl characteristics [from their profiles](http://www.pnas.org/content/111/24/8788.full) as discussed by Thore Graepel.
+	* gender, nationality , political views can be predicted
+	* identify likes for specific attributes
+	* user privacy can be an issue here
+* we can also identify individuals using big data
+	* we can [use location, 4 data points](http://science.sciencemag.org/content/347/6221/536.full?ijkey=4rZ2eFPUrlLGw&keytype=ref&siteid=sci)
+
+## how ppl look for future
+
+Following discussion from first week, we can check how ppl in different countries google for dates. Pattern will be independent of language, check [England](https://www.google.com/trends/explore#q=%222013,+2012,+2011,+2010,+2009%22&geo=GB) and [Japan](https://www.google.com/trends/explore#q=%222013,+2012,+2011,+2010,+2009%22&geo=JP) for example
 
 
+# week 7 - Mobility
+
+* how big data can help us measure where people are and where they are going, and how big data might help in disasters
+* what about subjective variables that diff between ppl?
+	* we can still id those at scale and id relationships between them
+	* ppl differences introduce noise yet pattern emerge if we collect enough data
+	* if there is no insesitve (like manipulating stock market) ppl will not false data
+	* using social media platform creates problem as we only work on subset of data and it does vary from time to time
+
+## using mobiles data
+
+### counting crowds
+
+Friderico Botta talk was presented in [BBC](https://www.youtube.com/watch?v=TY59bJIZs2s) and [published](http://rsos.royalsocietypublishing.org/content/2/5/150162) discussed use of mobile phone data & calls, as well as Twitter to count how many ppl are at the event. He used sample data for for Milano city centre and football stadium.
+* data shown
+	* volume of calls
+	* data usage
+	* geotagged tweets
+* prediction using only one sorce is very reliable.  Adding more than one source does not improve the model.
+
+### tracking ppl
+
+Reserachers have used [dedicated app](https://www.youtube.com/watch?v=Z1BVS5Nkc_E) to estimate ppl movement during [Lord's Mayor Show 2011](https://vimeo.com/39184250). For user to use app there has be insensitive to use application
+
+### predicting where ppl are going
+
+Mirco [mined ppls positioning data](https://www.youtube.com/watch?v=Yi9wx7Raa_Y&index=19&list=PLEMiIcsJKOBcQfE2kwFY9GU4WzZ0lvJNS) showed how knowing social links of ppl create better model.
 
 
+### hurracane Sandy with Flickr
 
+
+As discussed in [paper](http://www.nature.com/articles/srep03141) Flickr photos tagged with hurricane Sandy to test its popularity over time. As a comparison they used atmospheric air pressure, indicating good use as a predicition.
+
+* example of nowcasting
+* useful for supporting during and after disaster - for ex predicting insurance claims
+
+* [video](https://view.vzaar.com/4150604/video)
+
+### Haiti crowd sourcing maps
+
+[OpenStreet map project](https://www.youtube.com/watch?v=BwMM_vsA3aY) mapped roads following Haiti earthquake in 2010.
+
+* this have been repeated for other disasters
+
+
+### others
+
+Another study demonstrated:
+
+*  [traffic analysis](http://www.nature.com/ncomms/2016/160315/ncomms10793/full/ncomms10793.html) with short note in [Conversation](https://theconversation.com/big-data-shows-how-selfless-driving-could-ease-traffic-congestion-56166)
+* [clean air for cyclists](http://www.news.utoronto.ca/helping-cyclists-avoid-smoggy-routes-toronto-and-montreal-new-research-u-t) with [subsequent app](http://traq-research.mcgill.ca/cycleapp/toronto/)
+* your face is big data, as this russian student show using [VB application](http://www.bbc.co.uk/news/blogs-trending-36037628)
+
+
+Discussion:
+
+* it is not so much data or prediciton but actual implementation on the ground. Cited was Manchester IRA bombing.
+* it could be used for area-specific warning or for ex missing child note
+* concerns are ethical use of data and privacy issues
+* anomaly detection, indicating problem
+* evacuation procedure for eathequake
+	* predicting where ppl will run when it strikes
+	* using [mobile phones as seismometers](http://bayen.eecs.berkeley.edu/sites/default/files/journals/06470715.pdf)
 
 # general references
 
