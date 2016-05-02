@@ -313,13 +313,52 @@ Another study demonstrated:
 
 Discussion:
 
-* it is not so much data or prediciton but actual implementation on the ground. Cited was Manchester IRA bombing.
+* it is not so much data or prediction but actual implementation on the ground. Cited was Manchester IRA bombing.
 * it could be used for area-specific warning or for ex missing child note
 * concerns are ethical use of data and privacy issues
 * anomaly detection, indicating problem
 * evacuation procedure for eathequake
 	* predicting where ppl will run when it strikes
 	* using [mobile phones as seismometers](http://bayen.eecs.berkeley.edu/sites/default/files/journals/06470715.pdf)
+
+
+# Week 9 - infuencing with data
+
+
+## Taxi drivers spatial orientation
+
+Ed Manley [discuss](https://www.youtube.com/watch?v=647PcoJjIpU&list=PLEMiIcsJKOBcQfE2kwFY9GU4WzZ0lvJNS&index=21) use GPS track of 700k taxi journeys to understand how they navigate.
+
+* they can't model route as single objective - most useful was speed of getting there (40-17% explanatory)
+* what if we break routes into smaller ones? And map those
+* we can see variations in selections of the sub-routes, deviations from shortest routes
+* certain more scenic places are more attractive to real drivers, than shortest routes
+
+## Using Oyster data
+
+Michael Batty looked into [mapping of](https://www.youtube.com/watch?v=CbDKi8JoiHE&list=PLEMiIcsJKOBcQfE2kwFY9GU4WzZ0lvJNS&index=3) smart cities as chair of CASA. Embedding of sensors changed the way we map envoroment, such as smart cards - we got both spatial and temporal dimension in real time.
+
+* use of Oyster for TfL travel
+
+## Describe growth of cities
+
+Major increase of growing population is in the cities - by 2050 75% of pop is expected to live in the city. We can use collected information to find patterns [as discussed in paper](http://www.pnas.org/content/104/17/7301.full.pdf).
+
+
+## Big Data and politics
+
+[Big data overview](http://www.parliament.uk/business/publications/research/briefing-papers/POST-PN-468/big-data-overview) by POST discussed advantages of big data.
+Comments:
+
+* highlighted use of [spin doctors](http://www.wired.co.uk/magazine/archive/2015/12/rd/david-cameron-behavioural-insights-team)
+* funny nobody mentioned <https://sclelections.com/>
+* a lot highlight privacy issues, including [governmental influence over media](http://www.theguardian.com/media/2016/may/01/bbc-schedule-labour-maria-eagle-accuses-government-of-unacceptable-meddling)
+
+## Telling story with data
+
+* Adrian Letchford discussed how to [tell stories with data](https://www.youtube.com/watch?v=FKacE8l2FIw&list=PLEMiIcsJKOBcQfE2kwFY9GU4WzZ0lvJNS&index=20), introducing [Google Correlate](https://www.google.com/trends/correlate) tool
+* fdddd
+
 
 # general references
 
